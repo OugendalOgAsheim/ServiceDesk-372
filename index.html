@@ -1,0 +1,98 @@
+<!doctype html> <!-- jeg skriver denne koden for å registrere dokumentet som en html -->
+<html>
+<head>
+<link rel="stylesheet" href="stilark.css"> <!-- Her har jeg registrert css filen som jeg laget, denne utgjør utsene på skriften og nettsiden.
+ Man kan blantannet skifte font, farger, lage "margin" altså skille ting fra hverandre og man kan også skifte størelsen på skriften her -->
+	<title> Hvordan lage en nettside </title>
+	<h1> Trinn 1 : Lag et Repository </h1>
+	<!-- h1 gjør at man før en større overskrift, man kan velge høyere tall en 1 for en mindre overskrift -->
+</head>
+<body>
+	<p>Først må du opprette et lager, dette gjør du ved å <br>
+	1. i øverste høyre hjørne trykker du på avataren og trykker der etter + og velger "new repository <br>
+	2. Gi repositoryen et navn<br>
+	3. lag en kort beskrivelse <br>
+	4. velg "initialize this repository wit a README"</p>
+	
+		<img src="create-new-repo.png" alt="Mitt bilde" width="600" height="300">
+		
+</body>
+<head> <!-- her lager jeg en ny head, dette gjør jeg for å markere at jeg startet et nytt "avsnitt" og for å lage dokumentet mer oversiktlig-->
+	<h1> Trinn 2 : Lag en Gren </h1>
+</head>
+<body> <!-- her lager jeg en ny body for å få mer struktur i koden og for å markere at jeg skal skrive noe nytt -->
+	<h3> Lage en master gren </h3>
+		<p> Det å forgreine er å lage forskjellige versioner av dokumentet på en gang, akkurat som du lagrer 2 like word dokumente men den ene har en forskjelig skrifttype. <br>
+			Master grenen er altså hoved grenen, enkelte personer kan ta denne master grenen å lage en gren ut av den.<br>
+			Når de gjør dette så vill de få en eksakt kopi, men hvis de endre på denne så ville ikke mastergrenen forandres.<br>
+			Man velger selv om man vill sette inn de nye kodene i mastergrenen <br>
+			Det som er greit med grener er at man kan få inn mange forslag og velge blandt de beste å ta inn i master grenen <br></p>
+			
+				<img src="branching.png" alt="Mitt bilde" width="500" height="200">
+				
+	<h3> Opprete en ny avdeling </h3>
+		<p> 1. Gå til ditt nye lager "hello-world" <br>
+			2. Klikk på rullegarinmenyen øverst på fil listen som sier "gren: master" <br>
+			3. Skriv inn et filnavn i tekstboksen, dette gjør du for å lage en ny gren<br>
+			4. Velg den blå opprettningsfeltet eller trykk "Enter" <br> <br>
+			Når dette er gjort har du laget en ny gren, da kan vi starte å endre på den nye grenen uten å påvirke master grenen</p>
+			
+				<img src="pr-form.png" alt="Mitt bilde" width="500" height="200">	
+</body>
+<head>
+	<h1> Trinn 3 : Lag og foreta endringer </h1>
+</head>
+<body>
+	<p> Nå har du laget en kopi av master grenen, nå kan vi gjøre endringer uten å påvirke mastergrenen <br>
+		Hver gang du gjør en forpliktelse så må du skrive en commit-melding, denne meldingen skal beskrive hvilken endringer du gjorde og hvorfor <br>
+		Dette gjør man for at de andre skal forstå hva du har endret på <br><br>
+		
+		Når du skal lage og foreta endriger må du <br>
+		1. Klikk på "readme.md" filen <br>
+		2. Trykk på blyantikonet øverst til høyre i filvisngen, dette gjør du for å redigere <br>
+		3. Skriv i reaktøren litt om deg selv <br>
+		4. Skriv en commit-melding som besrkiver endrigene du har gjort <br>
+		5. Klikk på forbind endringer <br> <br> </p>
+			
+			<img src="commit.png" alt="Mitt bilde" width="500" height="200">
+		<p>
+		Når du har gjort dette så har du laget en endring på grenen som du laget, denne grenen inneholder nå endringen dine fra master grenen</p>
+</body>
+<head>
+	<h1> Trinn 4 : Åpne en trekkforespørsel </h1>
+</head>
+<body>
+	<p> Nå som du har laget en endring fra mastergrenen så kan du åpne en trekkforespørsel <br>
+		Når du gjør dette så foreslår du altså en endring i mastergrenen, en trekkforespørsel viser endrigene i den nye grenen iforhold til den andre <br></p>
+	<h3> Åpne en pull request for endriger i README </h3>
+		<p>
+		1. Klikk på Pull Request fanen, og deretter fra pull Request siden klikker du på den grønne New Pull Request Knappen <br>
+		
+		2. I boksen Example Comparisons velger du filen di lagret "readme-edits" for å sammenligne den med den orginale mastergrenen <br>
+		
+		3. Se godt over endrigene du har gjort og bestemm deg om du vil sende dette inn <br> </p>
+		
+			<img src="diff.png" alt="Mitt bilde" width="500" height="200">
+		<p>
+		4. Hvis du er fornøyd med endrigene dine så trykker du på Create pull request knappen <br>
+		
+		5. Etter dette gir du pull requesten en tittel og en beskrivelse av endrigene <br> <br> </p>
+		
+			<img src="pr-form.png" alt="Mitt bilde" width="500" height="200">
+		
+		<p> Når du er ferdig med disse trinene trykker du på oppret pull request</p>
+</body>
+<head>
+	<h1> Trinn 5 : Slå sammen grenene </h1>
+</head>
+<body>
+	<p> Dette er det siste trinnet, nå skal du slå sammen master grenen med din redigerte gren <br>
+		1. Klikk på den grønne Merge pull request Knappen for å slå sammen endrigene <br>
+		2. Klikk på bekreft fusjon <br>
+		3. Slett den gamle grene  som var en kopi av mastergrenen <br> <br> </p>
+			
+			<img src="merge-button.png" alt="Mitt bilde" width="500" height="200">
+		
+		<p> Du har nå laget en mastergren, laget en kopi, redigert kopien, sendt pull request og slått sammen grenene</p>
+</body>
+</html>
