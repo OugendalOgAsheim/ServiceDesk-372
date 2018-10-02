@@ -1,0 +1,16 @@
+body {
+background-color: #e0e0e0; /* lysegrå, dette er bakgrunsfargen */
+font-family: "Century Gothic", Arial, sans-serif;
+font-size: 14px; /* størelsen på fonten altså teksten*/
+color: #323232; /* mørkegråd */
+border-style: solid; 
+/* dette er en type bariere som er rundt hele teksten akkurat som en farge barriere,
+man kan koden den til å være rundt spesefike linjer og avsnitt,
+man kan velge forskjellige stiler på denne, for eksempel solid, dotted og dashed.
+dotted er en type stipplet bariere men dashed er det samme bare større mellom rom mellom fargene */
+border-width: 5px;
+border-left-width: 5px;
+border-right-width: 5px;
+border-color: #606060;
+
+}
